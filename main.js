@@ -5,11 +5,11 @@ swfobject.embedSWF = function(url, cont, width, height){
         player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
             width: width,
             height: height,
-            style: 'width: ' + width + 'px; height: ' + height + 'px',
+            //style: 'width: ' + width + 'px; height: ' + height + 'px',
         });
 
-    player.style.width = "90vw"; 
-    player.style.height = "90vh";
+    player.style.width = "100vw"; 
+    player.style.height = "100vh";
     player.load({ url: url });
 }
 
